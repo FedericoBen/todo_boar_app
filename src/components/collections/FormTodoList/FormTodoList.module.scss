@@ -1,0 +1,26 @@
+.form_item {
+  position: fixed;
+  top: 200px;
+  right: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-block: 20px;
+  padding-inline: 16px;
+  color: black;
+  background-color: #ffffff;
+  border: none;
+  width: 160px;
+  min-height: 210px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  gap:10px
+}
+
+.input {
+  color: black !important;
+}
+
+.placeholder {
+  color: black !important;
+}

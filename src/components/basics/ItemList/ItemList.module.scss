@@ -1,0 +1,55 @@
+.item_todo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-block: 20px;
+    padding-inline: 16px;
+    font-size: 20px;
+    color: black;
+    background-color: #ffffff;
+    border: none;
+    width: 160px;
+    height: 210px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    & .pushpin {
+      background-color: rgb(169, 6, 6);
+      height: 16px;
+      width: 16px;
+      border-radius: 50%;
+      position: absolute;
+      top: 20px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      overflow: hidden;
+    }
+
+    & .description_todo {
+      overflow: hidden;
+      display: inline-block;
+      width: 100%;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    &:hover{
+      cursor: pointer;
+      animation-name: move_item;
+      animation-duration: 0.5s;
+      
+    }
+
+    & .container_buttons{
+        display: flex;
+        gap: 8px;
+    }
+
+  }
+
+  
+@keyframes move_item {
+    0%   {transform: rotate(-7deg);}
+    50%   {transform: rotate(7deg);}
+    100% {transform: rotate(-7deg);}
+  }
